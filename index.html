@@ -11,20 +11,21 @@
 			property="og:image"
 			content="https://user-images.githubusercontent.com/68966131/93496860-b652d780-f94a-11ea-971b-9089a8788a96.jpg"
 		/>
-		<meta property="og:title" content="안녕하세요. 영진전문대학교 글로벌존입니다." />
-		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-		<!--
-  manifest.json provides metadata used when your web app is installed on a
-  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
--->
-		<!-- calendar style -->
-		<link rel="stylesheet/less" type="text/css" href="/css/calendar.less" />
-		<!-- css/ js-->
-		<link rel="stylesheet" href="/css/base.css" />
-		<link rel="stylesheet" href="/css/template.css" />
-		<link rel="stylesheet" href="/css/flax.css" />
-		<link rel="stylesheet" href="/css/content.css" id="content" />
+		<meta property="og:title" content="Welcome to YJU E-Global Reservation System" />
 		<!-- font -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- favicon -->
 		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -43,61 +44,143 @@
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
-		<!--
-  Notice the use of %PUBLIC_URL% in the tags above.
-  It will be replaced with the URL of the `public` folder during the build.
-  Only files inside the `public` folder can be referenced from the HTML.
+		
+		<style>
+			html, body, div, span, object, iframe,
+			p, blockquote, pre,
+			a, abbr, address, big, cite, code,
+			del, dfn, em, font, ins, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, h1, h2, h3, h4, h5, h6,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend, 
+			table, caption, tbody, tfoot, thead, tr, th, td 
+			{margin:0; padding:0; border:0;}
 
-  Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-  work correctly both with client-side routing and a non-root public URL.
-  Learn how to configure a non-root public URL by running `npm run build`.
--->
-		<!-- css/ js-->
-		<script
-			type="text/javascript"
-			src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-		></script>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/less"></script>
-		<!-- <script src="/js/popup.js"></script> -->
-		<script type="text/javascript" src="/js/easydropdown.js"></script>
-		<!-- font -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700&display=swap"
-			rel="stylesheet"
-		/>
+
+			img, input.type-image { border: 0 none; }
+			ol, ul, li {list-style:none;}
+			blockquote, q {quotes:none;}
+			ins {text-decoration:none;}
+			del {text-decoration:line-through;}
+			table {border-spacing:0;} 
+			address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;}
+			select{font-size: 1em;}
+			.radio {margin-bottom:-2px;}
+
+			hr {display: none;}
+			legend {visibility:hidden; display:none; height:0; width:0; font-size:0;}
+			noscript{display:none;}
+			caption{visibility:hidden; height:0; width:0; font-size:0;}
+
+			a,
+			a:link {
+				text-decoration: none;
+				color: #000;
+			}
+
+			a:hover,
+			a:active,
+			a:focus {
+				text-decoration: none;
+			}
+
+			input[type="text"] {
+				-webkit-border-radius: 5px;
+				-webkit-appearance: none;
+			}
+
+			input[type="button"] {
+				-webkit-border-radius: 5px;
+				-webkit-appearance: none;
+			}
+
+			input[type="image"] {
+				-webkit-border-radius: 5px;
+				-webkit-appearance: none;
+			}
+
+			input[type="submit"] {
+				-webkit-border-radius: 5px;
+				-webkit-appearance: none;
+			}
+
+			input[type="password"] {
+				-webkit-border-radius: 5px;
+				-webkit-appearance: none;
+			}
+
+			body {
+				font-family: "Noto Sans KR", sans-serif; height:100%; position: relative; overflow: hidden;
+			}
+
+
+			/********************* INTRO *********************/
+			.intro {width:100%; height:100vh; background:#fff url(intro_bg.png) no-repeat right bottom;}
+			.w_size {width:1200px; margin:0 auto; text-align: center;}
+			.intro .intro_wrap {padding-top:5%;}
+			.intro .intro_wrap p {font-family: "Roboto", sans-serif; font-size:50px;font-weight: 700;color:#000;}
+			.intro .intro_wrap p span {display: inline-block; line-height:80%; padding-right: 25px;background: url(intro_tit.png) no-repeat right bottom;}
+			.intro .intro_wrap p.info_txt {font-family: "Noto Sans KR", sans-serif;font-size:13px;color:#a5a5a5;margin-top:20px;font-weight: 500;}
+			.intro .intro_wrap p.stxt {font-size:28px;margin-top:10px;font-weight:300;margin-bottom: 85px;color:#808080;}
+			.btn_wrap {display: inline-block;}
+			.intro .intro_wrap a {
+			font-family: "Roboto", sans-serif;
+			display:inline-block;
+			padding:150px 0 40px 0;
+			color: #000;
+			width: 310px;
+			font-size: 19px;
+			font-weight: 700;
+			margin:0 10px;
+			-webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.10);
+			-moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.10);
+			box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.10);
+			}
+			.intro .intro_wrap a span {font-size: 13px;color: #aaa;display: block;font-family: "Noto Sans KR", sans-serif;margin-top:5px;font-weight: 400;}
+			.intro .intro_wrap a.ico01 {background: url(gzone_ico01.gif) no-repeat 50% 55px;}
+			.intro .intro_wrap a.ico02 {background: url(gzone_ico02.gif) no-repeat 50% 55px;}
+			.foot {position: absolute; bottom:5%; overflow: hidden; width:1200px; text-align:left;}
+			.foot .finfo {float:left;}
+			.foot .finfo p {color: #acb3b6;margin-top: 5px;font-size: 12px;line-height: 170%;}
+			.foot .finfo p span {display:block; font-family: "Roboto", sans-serif;}
+			.foot .contribute {float:right;color:#30addc;font-size:12px;padding-left: 14px;border-left: 2px solid #ededed;margin-top: 20px;}
+			.foot .contribute p.tit  {font-weight: 600;font-size: 14px;line-height: 100%;margin-bottom: 10px;/* margin-top: 11px; */}
+			.foot .contribute div {display: inline-block;}
+			.foot .contribute a {float:left;color:#aeaeae;min-width: 60px;margin-bottom: 2px;margin-right:10px;font-family: "Roboto", sans-serif;}
+		</style>
 
 		<title>YJU - 글로벌존 예약시스템</title>
 	</head>
-	<body style="height:100%; position: relative; overflow: hidden;">
+	<body >
 		<div class="intro">
 			<div class="w_size">
 				<div class="intro_wrap">
-					<p>Welcome to<br /><span>YJU E-Global</span></p>
-					<p class="stxt">Reservation System</p>
+					<p>Welcome to <span>YJU E-Global</span></p>
+					<p class="stxt">Online Reservation System</p>
 
-					<a href="#">Global Zone</a>
-					<a href="#">Global Zone Center</a>
+					<div class="btn_wrap">
+						<a class="ico01" href="http://gzone.yjuweb.org">Global Zone <span>외국인 유학생(영어, 중국어, 일본어)</span></a>
+						<a class="ico02" href="http://gcenter.yjuweb.org">Global Center <span>외국인 교수(영어)</span></a>
+					</div>
+					<p class="info_txt">위 버튼을 클릭해서 원하는 서비스의 사이트로 이동해주세요.</p>
 				</div>
 				<div class="foot">
 					<div class="finfo">
-						<div class="logo"><img src="/global/img/intro_logo.gif" alt="영진전문대학교 로고"></div>
+						<div class="logo"><img src="intro_logo.gif" alt="영진전문대학교 로고"></div>
 						<p>대표전화 053-940-511441527 대구광역시 북구 복현로 35 (복현2동 218) 영진전문대학교
 						<span>COPYRIGHT© YEUNGJIN UNIVERSITY. All RIGHTS RESERVED.</span></p>
 					</div>
 					<div class="contribute">
 						<p class="tit">CONTRIBUTORS</p>
-						<p><span>JeongJaeSoon</span> <a href="https://github.com/JeongJaeSoon" target="_blank">https://github.com/JeongJaeSoon</a></p>
-						<p><span>ChoSeungHyun</span> <a href="https://github.com/kokomade98" target="_blank">https://github.com/kokomade98</a></p>
-						<p><span>LeeGuSeul</span> <a href="https://github.com/LeeGuSeul" target="_blank">https://github.com/LeeGuSeul</a></p>
-						<p><span>LeeJaeWon</span> <a href="https://github.com/LeeJaeBae" target="_blank">https://github.com/LeeJaeBae</a></p>
+						<div>
+							<p><a href="https://github.com/JeongJaeSoon" target="_blank">JeongJaeSoon</a></p>
+							<p><a href="https://github.com/kokomade98" target="_blank">ChoSeungHyun</a></p>
+						</div>
+						<div>
+							<p><a href="https://github.com/LeeGuSeul" target="_blank">LeeGuSeul</a></p>
+							<p><a href="https://github.com/LeeJaeBae" target="_blank">LeeJaeWon</a></p>
+						</div>
 					</div>
 				</div>
 			</div>

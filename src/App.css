@@ -173,7 +173,7 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -214,13 +214,14 @@ body {
     color: #a5a5a5;
     margin-top: 20px;
     font-weight: 500;
+    margin-bottom: 30px;
 }
 
 .intro .intro_wrap p.stxt {
     font-size: 28px;
     margin-top: 10px;
     font-weight: 300;
-    margin-bottom: 85px;
+    margin-bottom: 40px;
     color: #808080;
 }
 
@@ -265,8 +266,8 @@ body {
 }
 
 .foot {
-    position: absolute;
-    bottom: 5%;
+    /*position: absolute;*/
+    /*bottom: 5%;*/
     overflow: hidden;
     width: 1200px;
     text-align: left;
@@ -281,14 +282,14 @@ body {
 }
 
 .foot .finfo .log img {
-    width: 280px;
+    width: 250px;
     margin-bottom: 10px;
 }
 
 .foot .finfo p {
     color: #acb3b6;
     margin-top: 5px;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 170%;
 }
 
@@ -308,7 +309,7 @@ body {
 
 .foot .contribute p.tit {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 100%;
     margin-bottom: 10px;
     /* margin-top: 11px; */
@@ -325,7 +326,7 @@ body {
 }
 
 .foot .contribute a {
-    font-size: 15px;
+    font-size: 13px;
     float: left;
     color: #aeaeae;
     min-width: 60px;
@@ -354,7 +355,6 @@ body {
     .foot {
         position: static;
         text-align: center;
-        margin-top: 40px;
     }
 
     .intro .intro_wrap p {
@@ -363,7 +363,7 @@ body {
 
     .intro .intro_wrap p.stxt {
         font-size: 21px;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     .intro .intro_wrap a {
@@ -396,7 +396,7 @@ body {
     }
 
     .foot .contribute p.sub-tit {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .foot .contribute div {

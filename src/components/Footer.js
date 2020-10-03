@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import intro_logo from "../img/intro_logo.gif";
+import intro_logo from "../img/intro_logo.png";
 
 function Footer() {
     return (

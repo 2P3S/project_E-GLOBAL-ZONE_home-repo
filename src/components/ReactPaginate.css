@@ -14,6 +14,10 @@
 }
 
 .pagination ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    outline: none;
     color: #38a3cd;
 }
 

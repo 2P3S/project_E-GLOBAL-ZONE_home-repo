@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
-const useClick = (onClick, element) => {
+const useClick = (onClick) => {
+  const element = useRef();
   useEffect(() => {
     if (typeof onClick !== "function") {
       return;

@@ -78,6 +78,7 @@
   padding: 2px 25px;
   text-align: left;
   margin: 10px 0;
+  cursor: pointer;
 }
 
 .section .board:last-child {

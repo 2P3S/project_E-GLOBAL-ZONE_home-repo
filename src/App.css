@@ -213,6 +213,7 @@ body {
     font-size: 13px;
     color: #a5a5a5;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 500;
 }
 
@@ -220,7 +221,7 @@ body {
     font-size: 28px;
     margin-top: 10px;
     font-weight: 300;
-    margin-bottom: 85px;
+    margin-bottom: 40px;
     color: #808080;
 }
 

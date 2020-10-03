@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function Home() {
     const preventEvent = (event) => {
         event.preventDefault();
@@ -29,6 +28,7 @@ function Home() {
             <p className="info_txt">
                 위 버튼을 클릭해서 원하는 서비스의 사이트로 이동해주세요.
             </p>
+
         </div>
     )
 }

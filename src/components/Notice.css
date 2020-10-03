@@ -1,0 +1,44 @@
+.notice {
+    border-top: 2px solid black;
+    border-bottom: 3px solid black;
+    width: 310px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.notice .notice-title {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    color: #30addc;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.notice .boards .board {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    margin: 5px 0;
+}
+
+.notice .boards .board .id {
+    width: 13%;
+}
+
+.notice .boards .board .views {
+    width: 17%;
+}
+
+.notice .boards .board .title {
+    width: 70%;
+}
+
+/********************모바일********************/
+@media (max-width: 736px) {
+    .notice {
+        display: block;
+        margin-top: 20px;
+    }
+}

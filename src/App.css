@@ -55,38 +55,38 @@ thead,
 tr,
 th,
 td {
-  margin: 0;
-  padding: 0;
-  border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 
 img,
 input.type-image {
-  border: 0 none;
+    border: 0 none;
 }
 
 ol,
 ul,
 li {
-  list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 ins {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 del {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 table {
-  border-spacing: 0;
+    border-spacing: 0;
 }
 
 address,
@@ -98,290 +98,315 @@ em,
 strong,
 th,
 var {
-  font-style: normal;
+    font-style: normal;
 }
 
 select {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 .radio {
-  margin-bottom: -2px;
+    margin-bottom: -2px;
 }
 
 hr {
-  display: none;
+    display: none;
 }
 
 legend {
-  visibility: hidden;
-  display: none;
-  height: 0;
-  width: 0;
-  font-size: 0;
+    visibility: hidden;
+    display: none;
+    height: 0;
+    width: 0;
+    font-size: 0;
 }
 
 noscript {
-  display: none;
+    display: none;
 }
 
 caption {
-  visibility: hidden;
-  height: 0;
-  width: 0;
-  font-size: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    font-size: 0;
 }
 
 a,
 a:link {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 a:hover,
 a:active,
 a:focus {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 input[type="text"] {
-  -webkit-border-radius: 5px;
-  -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none;
 }
 
 input[type="button"] {
-  -webkit-border-radius: 5px;
-  -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none;
 }
 
 input[type="image"] {
-  -webkit-border-radius: 5px;
-  -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none;
 }
 
 input[type="submit"] {
-  -webkit-border-radius: 5px;
-  -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none;
 }
 
 input[type="password"] {
-  -webkit-border-radius: 5px;
-  -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none;
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+    font-family: "Noto Sans KR", sans-serif;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 
 /********************* INTRO *********************/
 .intro {
-  width: 100%;
-  height: 100vh;
-  background: #fff url(img/intro_bg.png) no-repeat right bottom;
+    width: 100%;
+    height: 100vh;
+    background: #fff url(img/intro_bg.png) no-repeat right bottom;
 }
 
 .w_size {
-  width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .intro .intro_wrap {
-  padding-top: 5%;
+    padding-top: 5%;
 }
 
 .intro .intro_wrap p {
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
 }
 
 .intro .intro_wrap p span {
-  display: inline-block;
-  line-height: 80%;
-  padding-right: 25px;
-  background: url(img/intro_tit.png) no-repeat right bottom;
+    display: inline-block;
+    line-height: 80%;
+    padding-right: 25px;
+    background: url(img/intro_tit.png) no-repeat right bottom;
 }
 
 .intro .intro_wrap p.info_txt {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 13px;
-  color: #a5a5a5;
-  margin-top: 20px;
-  font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13px;
+    color: #a5a5a5;
+    margin-top: 20px;
+    font-weight: 500;
 }
 
 .intro .intro_wrap p.stxt {
-  font-size: 28px;
-  margin-top: 10px;
-  font-weight: 300;
-  margin-bottom: 85px;
-  color: #808080;
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-bottom: 85px;
+    color: #808080;
 }
 
 .btn_wrap {
-  display: inline-block;
+    display: inline-block;
 }
 
 .intro .intro_wrap a {
-  font-family: "Roboto", sans-serif;
-  display: inline-block;
-  padding: 150px 0 40px 0;
-  color: #000;
-  width: 310px;
-  font-size: 19px;
-  font-weight: 700;
-  margin: 0 10px;
-  -webkit-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.10);
-  -moz-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.10);
-  box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.10);
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+    padding: 150px 0 40px 0;
+    color: #000;
+    width: 310px;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 10px;
+    -webkit-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.10);
 }
 
 .intro .intro_wrap a span {
-  font-size: 13px;
-  color: #aaa;
-  display: block;
-  font-family: "Noto Sans KR", sans-serif;
-  margin-top: 5px;
-  font-weight: 400;
+    font-size: 13px;
+    color: #aaa;
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-top: 5px;
+    font-weight: 400;
 }
 
 .intro .intro_wrap a.ico01 {
-  background: url(img/gzone_ico01.png) no-repeat 50% 55px;
+    background: url(img/gzone_ico01.png) no-repeat 50% 55px;
 }
 
 .intro .intro_wrap a.ico02 {
-  background: url(img/gzone_ico02.png) no-repeat 50% 55px;
+    background: url(img/gzone_ico02.png) no-repeat 50% 55px;
 }
 
 .intro .intro_wrap a:hover {
-  transition: 0.6s;
-  transform: scale(1.05);
+    transition: 0.6s;
+    transform: scale(1.05);
 }
 
 .foot {
-  position: absolute;
-  bottom: 5%;
-  overflow: hidden;
-  width: 1200px;
-  text-align: left;
+    position: absolute;
+    bottom: 5%;
+    overflow: hidden;
+    width: 1200px;
+    text-align: left;
 }
 
 .foot .finfo {
-  float: left;
+    float: left;
+}
+
+.foot .finfo .log {
+    margin-top: 20px;
+}
+
+.foot .finfo .log img {
+    width: 280px;
+    margin-bottom: 10px;
 }
 
 .foot .finfo p {
-  color: #acb3b6;
-  margin-top: 5px;
-  font-size: 12px;
-  line-height: 170%;
+    color: #acb3b6;
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 170%;
 }
 
 .foot .finfo p span {
-  display: block;
-  font-family: "Roboto", sans-serif;
+    display: block;
+    font-family: "Roboto", sans-serif;
 }
 
 .foot .contribute {
-  float: right;
-  color: #30addc;
-  font-size: 12px;
-  padding-left: 14px;
-  border-left: 2px solid #ededed;
-  margin-top: 20px;
+    float: right;
+    color: #30addc;
+    font-size: 12px;
+    padding-left: 14px;
+    border-left: 2px solid #ededed;
+    margin-top: 20px;
 }
 
 .foot .contribute p.tit {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 100%;
-  margin-bottom: 10px;
-  /* margin-top: 11px; */
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 10px;
+    /* margin-top: 11px; */
+}
+
+.foot .contribute p.sub-tit {
+    font-size: 15px;
+    color: #aeaeae;
+    margin-bottom: 10px;
 }
 
 .foot .contribute div {
-  display: inline-block;
+    display: inline-block;
 }
 
 .foot .contribute a {
-  float: left;
-  color: #aeaeae;
-  min-width: 60px;
-  margin-bottom: 2px;
-  margin-right: 10px;
-  font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    float: left;
+    color: #aeaeae;
+    min-width: 60px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
 }
 
 /********************모바일********************/
-@media(max-width:736px) {
-  body {
-    overflow: auto;
-  }
+@media (max-width: 736px) {
+    body {
+        overflow: auto;
+    }
 
-  .intro {
-    padding: 20px;
-    box-sizing: border-box;
-    height: auto;
-  }
+    .intro {
+        padding: 20px;
+        box-sizing: border-box;
+        height: auto;
+    }
 
-  .w_size,
-  .foot {
-    width: 100%;
-  }
+    .w_size,
+    .foot {
+        width: 100%;
+    }
 
-  .foot {
-    position: static;
-    text-align: center;
-    margin-top: 40px;
-  }
+    .foot {
+        position: static;
+        text-align: center;
+        margin-top: 40px;
+    }
 
-  .intro .intro_wrap p {
-    font-size: 38px;
-  }
+    .intro .intro_wrap p {
+        font-size: 38px;
+    }
 
-  .intro .intro_wrap p.stxt {
-    font-size: 21px;
-    margin-bottom: 60px;
-  }
+    .intro .intro_wrap p.stxt {
+        font-size: 21px;
+        margin-bottom: 60px;
+    }
 
-  .intro .intro_wrap a {
-    width: 100%;
-    margin: 0 0 15px 0;
-  }
+    .intro .intro_wrap a {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
 
-  .intro .intro_wrap p.info_txt {
-    margin-top: 10px;
-  }
+    .intro .intro_wrap p.info_txt {
+        margin-top: 10px;
+    }
 
-  .foot .finfo {
-    float: none;
-  }
+    .foot .finfo {
+        float: none;
+    }
 
-  .foot .finfo p span {
-    display: inline;
-  }
+    .foot .finfo p {
+        font-size: 11px;
+    }
 
-  .foot .contribute {
-    float: none;
-    border: none;
-    padding: 25px 0;
-    margin-top: 25px;
-    border-top: 1px solid #ededed;
-  }
+    .foot .finfo p span {
+        display: inline;
+    }
 
-  .foot .contribute div {
-    width: 100%;
-  }
+    .foot .contribute {
+        float: none;
+        border: none;
+        padding: 25px 0;
+        margin-top: 25px;
+        border-top: 1px solid #ededed;
+    }
 
-  .foot .contribute a {
-    width: 50%;
-    text-align: center;
-    margin: 5px 0 0 0;
-  }
+    .foot .contribute p.sub-tit {
+        font-size: 13px;
+    }
+
+    .foot .contribute div {
+        width: 100%;
+    }
+
+    .foot .contribute a {
+        font-size: 13px;
+        width: 50%;
+        text-align: center;
+        margin: 5px 0 0 0;
+    }
 }

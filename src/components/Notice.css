@@ -1,7 +1,7 @@
 .notice {
     width: 790px;
     font-family: "Noto Sans KR", sans-serif;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 .head {
@@ -10,6 +10,7 @@
     color: white;
     font-weight: 500;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.3);
 }
 
 .head div {
@@ -37,6 +38,12 @@
 .head .btn {
     width: 15%;
     color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.head .btn:hover {
+    transform: scale(1.1);
 }
 
 .head .btn img {
@@ -67,7 +74,7 @@
     margin: 10px 0;
 }
 
-.section .board:nth-last-child(1) {
+.section .board:last-child {
     border: none;
 }
 

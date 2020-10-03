@@ -1,0 +1,77 @@
+.pagination {
+    margin-top: 10px;
+}
+
+.pagination ul li {
+    margin: 0 -0.5px;
+    display: inline-block;
+    border: 1px solid #aeaeae;
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.pagination ul li a {
+    color: #38a3cd;
+}
+
+.pagination ul li:first-child,
+.pagination ul li:last-child {
+    margin: 20px;
+}
+
+.pagination ul li:first-child {
+    width: 90px;
+}
+
+.pagination ul li:nth-child(2) {
+    border-radius: 5px 0 0 5px;
+}
+
+.pagination ul li:last-child {
+    width: 60px;
+}
+
+.pagination ul li:nth-last-child(2) {
+    border-radius: 0 5px 5px 0;
+}
+
+.pagination ul li.disabled {
+    visibility: hidden;
+}
+
+.pagination ul li.selected {
+    background-color: #38a3cd;
+}
+
+
+.pagination ul li.selected a {
+    color: white;
+}
+
+/********************모바일********************/
+@media (max-width: 736px) {
+    .pagination ul li {
+        font-size: 13px;
+        width: 25px;
+        height: 25px;
+        box-sizing: border-box;
+        line-height: 22px;
+    }
+
+    .pagination ul li:first-child,
+    .pagination ul li:last-child {
+        margin: 0 10px;
+    }
+
+    .pagination ul li:first-child {
+        width: 80px;
+    }
+
+    .pagination ul li:last-child {
+        width: 50px;
+    }
+}
+

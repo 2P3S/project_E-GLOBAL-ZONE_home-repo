@@ -1,8 +1,10 @@
 import React from "react";
+import ReactPaginate from 'react-paginate';
 import intro_notice_ico from "../img/intro_notice_ico.gif";
 import intro_tab_cir from "../img/intro_tab_cir.gif"
 import notice_date_ico from "../img/notice_date_ico.gif";
 import "./Notice.css";
+import "./ReactPaginate.css";
 
 function Notice() {
     return <div className="notice">
@@ -61,6 +63,17 @@ function Notice() {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="pagination">
+            <ReactPaginate
+                pageCount={1000}
+                pageRangeDisplayed={4}
+                marginPagesDisplayed={0}
+                previousLabel={"previous"}
+                nextLabel={"next"}
+                breakLabel={""}
+                initialPage={1}
+            />
         </div>
     </div>
 }

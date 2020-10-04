@@ -71,7 +71,7 @@
   line-height: 150px;
 }
 
-.section .board {
+.section .notice-board {
   box-sizing: border-box;
   width: 100%;
   padding: 2px 25px;
@@ -80,20 +80,20 @@
   cursor: pointer;
 }
 
-.section .board div {
+.section .notice-board div {
   margin-bottom: 20px;
 }
 
-.section .board .title {
+.section .notice-board .title {
   font-weight: bold;
 }
 
-.section .board .contents,
-.section .board .footer {
+.section .notice-board .contents,
+.section .notice-board .footer {
   color: #aeaeae;
 }
 
-.section .board .contents {
+.section .notice-board .contents {
   font-size: 13px;
   max-height: 45px;
   line-height: 1.5em;
@@ -104,28 +104,29 @@
   text-overflow: ellipsis;
 }
 
-.section .board .footer {
+.section .notice-board .footer {
   font-size: 15px;
 }
 
-.section .board .footer div {
+.section .notice-board .footer div {
   display: inline-block;
 }
 
-.section .board .footer .date {
+.section .notice-board .footer .date {
   width: 80%;
 }
 
-.section .board .footer .date img {
+.section .notice-board .footer .date img {
   margin-right: 10px;
 }
 
-.section .board .footer .view {
+.section .notice-board .footer .view {
   width: 20%;
   text-align: right;
 }
 
 button {
+  outline: none;
   width: 25%;
   background: inherit;
   border: none;
@@ -139,6 +140,11 @@ button {
 
 button:last-child {
   border: none;
+}
+
+.popup-content {
+  background: none !important;
+  border: none !important;
 }
 
 /********************모바일********************/
@@ -176,35 +182,35 @@ button:last-child {
     margin-bottom: 40px;
   }
 
-  .section .board {
+  .section .notice-board {
     padding: 0 20px;
   }
 
-  .section .board div {
+  .section .notice-board div {
     display: inline-block;
     text-align: center;
   }
 
-  .section .board .title,
-  .section .board .footer,
-  .section .board .footer .date {
+  .section .notice-board .title,
+  .section .notice-board .footer,
+  .section .notice-board .footer .date {
     margin: 0;
   }
 
-  .section .board .title,
-  .section .board .footer {
+  .section .notice-board .title,
+  .section .notice-board .footer {
     width: 50%;
   }
 
-  .section .board .title {
+  .section .notice-board .title {
     font-size: 14px;
   }
 
-  .section .board .contents {
+  .section .notice-board .contents {
     display: none;
   }
 
-  .section .board .footer .date {
+  .section .notice-board .footer .date {
     width: 100%;
   }
 }

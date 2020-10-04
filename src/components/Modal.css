@@ -1,0 +1,97 @@
+.popup {
+  padding: 40px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.popup.board {
+  width: 900px;
+}
+
+.popup .btn_area {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.popup .btn_area.right {
+  text-align: right;
+}
+
+.popup .btn_area a,
+.popup .btn_area div {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.popup .btn_area .mint {
+  background: #34bcad;
+}
+
+.popup .btn_area .blue {
+  background: #2050e6;
+}
+
+.popup .btn_area .gray {
+  background: #989ead;
+}
+
+.popup .btn_area .darkGray {
+  background: #373a44;
+}
+
+.popup .btn_area .white {
+  background: #fff;
+  color: #373a44;
+  border: 1px solid #d7d9e1;
+}
+
+.popup .btn_area .left {
+  float: left;
+}
+
+.popup .btn_area .right {
+  float: right;
+}
+
+.view_area p.noti_tit {
+  font-size: 23px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.view_area ul.noti_info {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+}
+
+.view_area ul.noti_info li {
+  float: right;
+  margin-left: 10px;
+  color: #999;
+  font-size: 13px;
+}
+
+.view_area ul.noti_info li span {
+  color: #555;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+.noti_view {
+  width: 100%;
+  margin-top: 10px;
+}

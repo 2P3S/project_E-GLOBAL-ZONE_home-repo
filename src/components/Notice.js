@@ -1,15 +1,20 @@
+// ========== import pkg ==========
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import Popup from "reactjs-popup";
+// ========== import component ==========
+import Board from "./Board";
+import Modal from "./Modal";
+// ========== import hooks ==========
 import useClick from "../hooks/useClick";
 import useAxios from "../hooks/useAxios";
-
+// ========== import img ==========
 import intro_notice_ico from "../img/intro_notice_ico.gif";
 import intro_tab_cir from "../img/intro_tab_cir.gif";
+// ========== import css ==========
 import "./Notice.css";
 import "./ReactPaginate.css";
 import "reactjs-popup/dist/index.css";
-import Board from "./Board";
 
 const API_URL = "http://www.94soon.net/api";
 const GET_NOTICE_LIST = `${API_URL}/notice`;
@@ -27,6 +32,7 @@ const updateNoticeList = (board) => {
     title: board.noti_title,
     contents: board.noti_content.replace(/(<([^>]+)>)/gi, ""),
     date: board.updated_at.split(" ")[0],
+    views: board.noti_views,
   };
 };
 
@@ -107,15 +113,13 @@ function Notice() {
             key={index}
             trigger={
               <button className="button">
-                <Board key={index} data={board} className="button"></Board>
+                <Board key={index} props={board} className="button"></Board>
               </button>
             }
             modal
           >
             <span>
-              {board.title}
-              {board.contents}
-              {board.date}
+              <Modal props={board} />
             </span>
           </Popup>
         ))}

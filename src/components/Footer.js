@@ -22,24 +22,52 @@ function Footer() {
         </p>
         <div>
           <p>
-            <Link to="https://github.com/JeongJaeSoon" target="_blank">
+            <Link
+              to="https://github.com/JeongJaeSoon"
+              target="_blank"
+              onClick={(event) => {
+                event.preventDefault();
+                window.open("https://github.com/JeongJaeSoon");
+              }}
+            >
               JeongJaeSoon
             </Link>
           </p>
           <p>
-            <Link to="https://github.com/kokomade98" target="_blank">
+            <Link
+              to="https://github.com/kokomade98"
+              target="_blank"
+              onClick={(event) => {
+                event.preventDefault();
+                window.open("https://github.com/kokomade98");
+              }}
+            >
               ChoSeungHyun
             </Link>
           </p>
         </div>
         <div>
           <p>
-            <Link to="https://github.com/LeeGuSeul" target="_blank">
+            <Link
+              to="https://github.com/LeeGuSeul"
+              target="_blank"
+              onClick={(event) => {
+                event.preventDefault();
+                window.open("https://github.com/LeeGuSeul");
+              }}
+            >
               LeeGuSeul
             </Link>
           </p>
           <p>
-            <Link to="https://github.com/LeeJaeBae" target="_blank">
+            <Link
+              to="https://github.com/LeeJaeBae"
+              target="_blank"
+              onClick={(event) => {
+                event.preventDefault();
+                window.open("https://github.com/LeeJaeBae");
+              }}
+            >
               LeeJaeWon
             </Link>
           </p>

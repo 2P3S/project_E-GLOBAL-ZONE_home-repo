@@ -22,7 +22,7 @@ const useAxios = (opts, menu, axiosInstance = defaultAxios) => {
         setstate({ ...state, loading: false, data });
       })
       .catch((error) => {
-        setstate({ ...state, loading: false, error: error.response });
+        setstate({ ...state, loading: false, error });
       });
   }, [menu]);
   return { ...state, refetch };

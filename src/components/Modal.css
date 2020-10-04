@@ -129,12 +129,17 @@
 @media (max-width: 736px) {
   .popup.board {
     height: 500px;
-    width: 70%;
+    width: 80%;
+    padding: 25px;
     /* transform: translateX(-20%); */
   }
 
   .modal-imgs {
-    height: 330px;
+    height: 290px;
+  }
+
+  .view_area p.noti_tit {
+    font-size: 20px;
   }
 
 }

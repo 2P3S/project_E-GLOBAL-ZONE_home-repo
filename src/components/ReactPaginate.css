@@ -1,5 +1,5 @@
 .pagination {
-  display: none;
+  visibility: hidden;
   margin-top: 10px;
 }
 

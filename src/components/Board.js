@@ -6,7 +6,7 @@ const Board = ({ props }) => {
     <div className="notice-board">
       <div className="title">{props.title}</div>
       <div className="contents">
-        <p>{props.contents}</p>
+        <div>{props.contents.replace(/(<([^>]+)>)/gi, "")}</div>
       </div>
       <div className="footer">
         <div className="date">

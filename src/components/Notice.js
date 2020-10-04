@@ -16,7 +16,7 @@ import "./Notice.css";
 import "./ReactPaginate.css";
 import "reactjs-popup/dist/index.css";
 
-const GET_NOTICE_LIST = "http://www.94soon.net/api/notice";
+const GET_NOTICE_LIST = "http://gzone.yjuweb.org/api/notice";
 const ERR_MSG = "공지사항 목록 조회에 실패하였습니다.";
 const zone = "zone";
 const center = "center";
@@ -30,7 +30,7 @@ const updateNoticeList = (board) => {
   return {
     id: board.noti_id,
     title: board.noti_title,
-    contents: board.noti_content.replace(/(<([^>]+)>)/gi, ""),
+    contents: board.noti_content,
     date: board.updated_at.split(" ")[0],
     views: board.noti_views,
   };

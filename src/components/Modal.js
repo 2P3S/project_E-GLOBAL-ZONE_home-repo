@@ -3,7 +3,7 @@ import useAxios from "../hooks/useAxios";
 import useClick from "../hooks/useClick";
 import "./Modal.css";
 
-const GET_NOTICE_IMG = "http://www.94soon.net/api/notice";
+const GET_NOTICE_IMG = "http://gzone.yjuweb.org/api/notice";
 const ERR_MSG = "게시글 조회에 실패하였습니다.";
 const NAME = {
   zone: "글로벌존",
@@ -57,7 +57,9 @@ const Modal = ({ props, menu }) => {
           {imgList.map((img, index) => (
             <img className="modal-img" key={index} src={img} alt="이미지"></img>
           ))}
-          <div className="noti_view">{props.contents}</div>
+          <div className="noti_view" dan>
+            <div dangerouslySetInnerHTML={{ __html: props.contents }}></div>
+          </div>
         </div>
       </div>
 

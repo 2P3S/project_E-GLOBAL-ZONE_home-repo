@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 const useClick = (onClick) => {
   const element = useRef();
+
   useEffect(() => {
     if (typeof onClick !== "function") {
       return;

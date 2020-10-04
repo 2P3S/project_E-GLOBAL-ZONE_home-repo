@@ -49,7 +49,7 @@ function Notice() {
   const noticeList = [];
 
   // <<-- axios
-  const { loading, data, error, refetch } = useAxios(
+  const { loading, data, error } = useAxios(
     {
       url: GET_NOTICE_LIST,
       method: "GET",
@@ -73,12 +73,11 @@ function Notice() {
 
   // <<-- 화면 변경
   const updateMenu = ({ target }) => {
-    refetch();
     updateBtn(target);
     setMenu(target.id);
   };
 
-  const btnZone = useClick(updateMenu, menu);
+  const btnZone = useClick(updateMenu);
   const btnCenter = useClick(updateMenu);
   // -->>
 

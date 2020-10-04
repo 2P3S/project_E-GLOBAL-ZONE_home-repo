@@ -6,7 +6,9 @@
 }
 
 .popup.board {
-  width: 900px;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
 }
 
 .popup .btn_area {
@@ -63,6 +65,20 @@
   float: right;
 }
 
+.popup .modal-imgs::-webkit-scrollbar {
+  width: 5px;
+}
+
+.popup .modal-imgs::-webkit-scrollbar-thumb {
+  background-color: #373a44;
+  border-radius: 10px;
+}
+
+.popup .modal-imgs::-webkit-scrollbar-track {
+  background-color: #e1e1ea;
+  border-radius: 10px;
+}
+
 .view_area p.noti_tit {
   font-size: 23px;
   color: #000;
@@ -94,4 +110,30 @@
 .noti_view {
   width: 100%;
   margin-top: 10px;
+}
+
+.modal-imgs {
+  height: 630px;
+  margin-top: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+/********************모바일********************/
+@media (max-width: 736px) {
+  .popup.board {
+    height: 500px;
+    width: 70%;
+    /* transform: translateX(-20%); */
+  }
+
+  .modal-imgs {
+    height: 330px;
+  }
+
 }

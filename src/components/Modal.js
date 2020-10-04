@@ -1,7 +1,46 @@
 import React from "react";
+import useAxios from "../hooks/useAxios";
+import useClick from "../hooks/useClick";
 import "./Modal.css";
 
-const Modal = ({ props }) => {
+const GET_NOTICE_IMG = "http://www.94soon.net/api/notice";
+const ERR_MSG = "게시글 조회에 실패하였습니다.";
+const NAME = {
+  zone: "글로벌존",
+  center: "글로벌센터",
+};
+
+const Modal = ({ props, menu }) => {
+  const imgList = [];
+
+  // <<-- axios
+  const { data, error } = useAxios(
+    {
+      url: `${GET_NOTICE_IMG}/${props.id}`,
+      method: "GET",
+      params: {
+        noti_url: menu,
+        num_of_notice: 4,
+      },
+    },
+    menu,
+  );
+
+  if (error) {
+    alert(`${NAME[menu]} ${ERR_MSG}`);
+  } else if (data) {
+    let getData = data.data.data;
+    getData.forEach(({ noti_img }) => {
+      imgList.push(noti_img);
+    });
+  }
+  // -->>
+
+  const test = () => {
+    let tag = document.getElementById("popup-root");
+    tag.remove();
+  };
+  const closeBtn = useClick(test);
   return (
     <div className="popup board">
       <div className="view_area">
@@ -14,12 +53,18 @@ const Modal = ({ props }) => {
             조회수 <span>{props.views}</span>
           </li>
         </ul>
-
-        <div className="noti_view">{props.contents}</div>
+        <div className="modal-imgs">
+          {imgList.map((img, index) => (
+            <img className="modal-img" key={index} src={img} alt="이미지"></img>
+          ))}
+          <div className="noti_view">{props.contents}</div>
+        </div>
       </div>
 
       <div className="btn_area">
-        <div className="darkGray">목록보기</div>
+        <div className="darkGray" ref={closeBtn}>
+          닫기
+        </div>
       </div>
     </div>
   );

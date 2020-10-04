@@ -16,8 +16,7 @@ import "./Notice.css";
 import "./ReactPaginate.css";
 import "reactjs-popup/dist/index.css";
 
-const API_URL = "http://www.94soon.net/api";
-const GET_NOTICE_LIST = `${API_URL}/notice`;
+const GET_NOTICE_LIST = "http://www.94soon.net/api/notice";
 const ERR_MSG = "공지사항 목록 조회에 실패하였습니다.";
 const zone = "zone";
 const center = "center";
@@ -29,6 +28,7 @@ const NAME = {
 
 const updateNoticeList = (board) => {
   return {
+    id: board.noti_id,
     title: board.noti_title,
     contents: board.noti_content.replace(/(<([^>]+)>)/gi, ""),
     date: board.updated_at.split(" ")[0],
@@ -119,7 +119,7 @@ function Notice() {
             modal
           >
             <span>
-              <Modal props={board} />
+              <Modal props={board} menu={menu} />
             </span>
           </Popup>
         ))}
@@ -129,7 +129,7 @@ function Notice() {
           pageCount={1000}
           pageRangeDisplayed={NUM_OF_NOTICE}
           marginPagesDisplayed={0}
-          previousLabel={"previous"}
+          previousLabel={"prev"}
           nextLabel={"next"}
           breakLabel={""}
           initialPage={0}

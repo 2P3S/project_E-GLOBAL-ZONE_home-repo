@@ -5,7 +5,9 @@ const Board = ({ props }) => {
   return (
     <div className="notice-board">
       <div className="title">{props.title}</div>
-      <div className="contents">{props.contents}</div>
+      <div className="contents">
+        <p>{props.contents}</p>
+      </div>
       <div className="footer">
         <div className="date">
           <img src={notice_date_ico} alt="" />

@@ -1,7 +1,7 @@
 import React from "react";
 import useAxios from "../hooks/useAxios";
 import useClick from "../hooks/useClick";
-import "./Modal.css";
+import "../style/Modal.css";
 
 const GET_NOTICE_IMG = "http://gzone.yjuweb.org/api/notice";
 const ERR_MSG = "게시글 조회에 실패하였습니다.";

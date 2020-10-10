@@ -182,7 +182,7 @@ body {
   width: 100%;
   /* height: 100vh; */
   padding-bottom: 100px;
-  background: #fff url(img/intro_bg.png) no-repeat right bottom;
+  background: #fff url(../img/intro_bg.png) no-repeat right bottom;
 }
 
 .w_size {
@@ -206,7 +206,7 @@ body {
   display: inline-block;
   line-height: 80%;
   padding-right: 25px;
-  background: url(img/intro_tit.png) no-repeat right bottom;
+  background: url(../img/intro_tit.png) no-repeat right bottom;
 }
 
 .intro .intro_wrap p.info_txt {
@@ -254,11 +254,11 @@ body {
 }
 
 .intro .intro_wrap a.ico01 {
-  background: url(img/gzone_ico01.png) no-repeat 50% 55px;
+  background: url(../img/gzone_ico01.png) no-repeat 50% 55px;
 }
 
 .intro .intro_wrap a.ico02 {
-  background: url(img/gzone_ico02.png) no-repeat 50% 55px;
+  background: url(../img/gzone_ico02.png) no-repeat 50% 55px;
 }
 
 .intro .intro_wrap a:hover {

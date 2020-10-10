@@ -12,8 +12,8 @@ import useAxios from "../hooks/useAxios";
 import intro_notice_ico from "../img/intro_notice_ico.gif";
 import intro_tab_cir from "../img/intro_tab_cir.gif";
 // ========== import css ==========
-import "./Notice.css";
-import "./ReactPaginate.css";
+import "../style/Notice.css";
+import "../style/ReactPaginate.css";
 import "reactjs-popup/dist/index.css";
 
 const GET_NOTICE_LIST = "http://gzone.yjuweb.org/api/notice";

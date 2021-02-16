@@ -13,13 +13,13 @@ function Home() {
       <p className="stxt">Online Reservation System</p>
 
       <div className="btn_wrap">
-        <a className="ico01" href="http://gzone.yjuweb.org">
+        <a className="ico01" href="http://gzone.yju.ac.kr">
           Global Zone <span>외국인 유학생(영어, 중국어, 일본어)</span>
         </a>
         <a
           // onClick={preventEvent}
           className="ico02"
-          href="http://gcenter.yjuweb.org"
+          href="http://gcenter.yju.ac.kr"
         >
           Global Center <span>외국인 교수(영어)</span>
         </a>

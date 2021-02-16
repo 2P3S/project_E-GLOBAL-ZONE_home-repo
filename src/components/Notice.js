@@ -16,7 +16,7 @@ import "../style/Notice.css";
 import "../style/ReactPaginate.css";
 import "reactjs-popup/dist/index.css";
 
-const GET_NOTICE_LIST = "http://gzone.yjuweb.org/api/notice";
+const GET_NOTICE_LIST = "http://210.101.228.212/api/notice";
 const ERR_MSG = "공지사항 목록 조회에 실패하였습니다.";
 const zone = "zone";
 const center = "center";

@@ -3,7 +3,7 @@ import useAxios from "../hooks/useAxios";
 import useClick from "../hooks/useClick";
 import "../style/Modal.css";
 
-const GET_NOTICE_IMG = "http://gzone.yjuweb.org/api/notice";
+const GET_NOTICE_IMG = "http://210.101.228.212/api/notice";
 const ERR_MSG = "게시글 조회에 실패하였습니다.";
 const NAME = {
   zone: "글로벌존",
